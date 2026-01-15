@@ -164,6 +164,16 @@ main {
   list-style: none;
 }
 
+.outputs-section .output-list {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--spacing-lg);
+}
+
+.outputs-section .output-item {
+  margin-bottom: 0;
+}
+
 .output-item {
   margin-bottom: var(--spacing-lg);
   padding: var(--spacing-lg);
@@ -336,6 +346,10 @@ main {
 @media (max-width: 768px) {
   .practices-grid {
     grid-template-columns: repeat(2, 1fr);
+  }
+  
+  .outputs-section .output-list {
+    grid-template-columns: 1fr;
   }
   
   .practice-page {
